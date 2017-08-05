@@ -1,0 +1,33 @@
+body {
+  padding: 50px;
+  font-family: 'Oswald', cursive;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.current {
+	position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+}
+
+.message {
+	text-align: center;
+	font-size: 100px;
+}
+
+.picture {
+	border-radius: 1000px;
+	width: 500px;
+	margin-top: 150px;
+	display: block;
+	margin: 0 auto;
+}
+
+.messages {
+	font-size: 50px;
+	list-style: none;
+}
