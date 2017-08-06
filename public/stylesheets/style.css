@@ -29,6 +29,7 @@ h1 {
 
 .stats-words {
 	height: 25%;
+	padding-left: 15px;
 }
 
 .stats-charts {
@@ -69,7 +70,7 @@ h1 {
 .messages {
 	margin: 0;
 	padding: 0;
-	height: 70%;
+	height: 75%;
 	list-style: none;
 	overflow-y: scroll;
 }
@@ -105,5 +106,5 @@ h1 {
 
 .footer {
 	background: #3D95CE;
-	height: 25%;
+	height: 25px;
 }
