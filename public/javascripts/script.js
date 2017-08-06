@@ -124,4 +124,7 @@ var chartOptions = {
             }
         }
     },
+    colors: [
+    	'#3D95CE'
+    ]
 };
