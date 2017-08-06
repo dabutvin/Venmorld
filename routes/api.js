@@ -10,15 +10,19 @@ router.get('/', function(req, res, next) {
         if(error) {
             console.log("Error: " + error);
         } else {
-            var result = JSON.parse(body);
-            var payment = result.data[0];
-            res.send(
-            {
-            	id: payment.payment_id,
-            	message: payment.message,
-            	picture: payment.actor.picture,
-            	handle: payment.actor.username
-            });
+        	try {
+	            var result = JSON.parse(body);
+	            var payment = result.data[0];
+	            res.send(
+	            {
+	            	id: payment.payment_id,
+	            	message: payment.message,
+	            	picture: payment.actor.picture,
+	            	handle: payment.actor.username
+	            });
+	        } catch (ex) {
+	        	res.send(ex);
+	        }
         }
     });
 });
