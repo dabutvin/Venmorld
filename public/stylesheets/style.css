@@ -37,9 +37,14 @@ a {
 
 .stats {
 	position: fixed;
+	top: 25px;
+	right: 2%;
+	width: 20%;
+	text-align: right;
+}
+
+.topwords {
 	font-size: 50px;
-	top: 0;
-	right: 10px;
 }
 
 ul,ol {
@@ -50,14 +55,14 @@ h3 {
 	margin: 0;
 	padding: 0;
 	display: inline;
+	font-size: 24px;
 }
 
 h1 {
 	position: fixed;
 	top: 0;
 	margin: 0;
-	left: 35%;
+	left: 36%;
 	font-size: 100px;
 	font-weight: 100;
-	text-decoration: underline;
 }
