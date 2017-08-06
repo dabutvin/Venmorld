@@ -29,7 +29,7 @@ h1 {
 
 .stats-words {
 	height: 25%;
-	padding-left: 15px;
+	padding-left: 25px;
 }
 
 .stats-charts {
@@ -107,4 +107,14 @@ h1 {
 .footer {
 	background: #3D95CE;
 	height: 25px;
+}
+
+
+@media only screen and (min-width: 780px) {
+	body {
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
+		margin: 10px auto 0 auto;
+		width: 600px;
+	}
 }
