@@ -2,18 +2,19 @@ extends layout
 
 block content
   h1 Venmorld
-  ul.messages
   div.stats
-    h3(style='text-decor: underline;') PER MESSAGE
-    div
-      h3 Avg : 
-      h3.avgpermessage 0.00
-    div
-      h3 Max : 
-      h3.maxpermessage 0
-    ol.topwords
+    div.stats-words
+      span Avg : 
+      span.avgpermessage 0.00
+      span  Max : 
+      span.maxpermessage 0
+    div.stats-charts
+      div#container
 
   div.current
-    img.picture
-    div.handle
-    div.message
+    div.active
+      img.picture
+      div.active-text
+        div.message
+        div.handle
+    ul.messages
