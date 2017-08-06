@@ -46,7 +46,7 @@ h1 {
 }
 
 .current {
-	height: 59%;
+	height: 57%;
 }
 
 .active {
@@ -67,14 +67,14 @@ h1 {
 .messages {
 	margin: 0;
 	padding: 0;
-	height: 75%;
+	height: 70%;
 	list-style: none;
 	overflow-y: scroll;
 }
 
 .messages li {
-	padding: 5px;
-	border-bottom: 1px solid lightblue;
+	padding: 5px 15px;
+	border-bottom: 1px solid #3D95CE;
 }
 
 .picture {
@@ -90,7 +90,7 @@ h1 {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	vertical-align: middle;
-	font-size: 36px;
+	font-size: 32px;
 }
 
 .handle {
@@ -99,4 +99,9 @@ h1 {
 
 .highcharts-credits {
 	display: none;
+}
+
+.footer {
+	background: #3D95CE;
+	height: 25%;
 }
