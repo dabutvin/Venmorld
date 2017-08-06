@@ -20,7 +20,10 @@ function fire() {
 
 			ids[data.id] = true;
 			if(lastMessage) {
-				$('.messages').prepend('<li>' + lastMessage +'</li>');
+				var newItem = $('<li>' + lastMessage +'</li>');
+				newItem.hide();
+				$('.messages').prepend(newItem);
+				newItem.fadeIn();
 			}
 
 			lastMessage = data.message;
@@ -101,7 +104,12 @@ var chartOptions = {
 		text: ''
 	},
 	xAxis: {
-		categories: []
+		categories: [],
+		labels: {
+			style: {
+				fontSize:'25px'
+			}
+		}
 	},
 	yAxis: {
 		title: ''
