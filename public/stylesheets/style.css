@@ -27,7 +27,16 @@ a {
 	margin: 0 auto;
 }
 
-.messages {
+.messages,
+.topwords {
+	position: absolute;
+	width: 20%;
 	font-size: 50px;
 	list-style: none;
+}
+
+.topwords {
+	position: fixed;
+	top: 100px;
+	right: 10px;
 }
