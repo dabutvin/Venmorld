@@ -6,7 +6,7 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 
-	request({ url: "https://venmo.com/api/v5/public" }, function(error, response, body) {
+	request({ url: "https://venmo.com/api/v5/public?limit=1" }, function(error, response, body) {
         if(error) {
             console.log("Error: " + error);
         } else {
