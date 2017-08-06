@@ -38,6 +38,7 @@ function fire() {
 			}
 
 			$('.picture').attr('src', data.picture);
+			$('.handle').text('@' + data.handle);
 			$('.message').html(data.message);
 			renderWordsMap();
 			renderAverageEmojiPerMessage();

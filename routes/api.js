@@ -16,7 +16,8 @@ router.get('/', function(req, res, next) {
             {
             	id: payment.payment_id,
             	message: payment.message,
-            	picture: payment.actor.picture
+            	picture: payment.actor.picture,
+            	handle: payment.actor.username
             });
         }
     });
