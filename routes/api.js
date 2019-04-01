@@ -4,7 +4,7 @@ var router = express.Router()
 var data = []
 
 fetchData()
-setInterval(fetchData, 1000 * 60 * 10)
+setInterval(fetchData, 1000 * 60 * 30)
 
 router.get('/', function(req, res, next) {
   if (data.length) return res.send(data.pop())
