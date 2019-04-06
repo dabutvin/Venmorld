@@ -1,17 +1,24 @@
 var express = require('express')
 var request = require('request')
 var router = express.Router()
-var data = []
+var data = new Set()
 
 fetchData()
 setInterval(fetchData, 1000 * 60 * 30)
 
 router.get('/', function(req, res, next) {
-  if (data.length) return res.send(data.pop())
+  if (data.size) return res.send(pop())
   fetchData(() => {
-    res.send(data.pop())
+    res.send(pop())
   })
 })
+
+function pop() {
+  for (let item of data.values()) {
+    data.delete(item)
+    return item
+  }
+}
 
 function fetchData(cb) {
   request({ url: 'https://venmo.com/api/v5/public' }, function(
@@ -26,7 +33,7 @@ function fetchData(cb) {
         let result = JSON.parse(body)
         for (let i = 0; i < result.data.length; i++) {
           let payment = result.data[i]
-          data.push({
+          data.add({
             id: payment.payment_id,
             message: payment.message,
             picture: payment.actor.picture,
